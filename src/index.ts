@@ -1,12 +1,12 @@
 // Ejercicio 1
 
 let years: number[] = [];
-let firstYear = 2000;
-let lastYear = 2024;
+let initialYear = 2000;
+let endYear = 2024;
 
-for (let year = firstYear; year <= lastYear; year++) {
-  years.push(year);
-  firstYear++;
+for (let currentYear = initialYear; currentYear <= endYear; currentYear++) {
+  years.push(currentYear);
+  initialYear++;
 }
 
 console.log(years);
@@ -70,19 +70,19 @@ for (const examMark of studentexamMarks) {
   }
 }
 
-let averageStudentMarks = 0;
+let averageStudentExamMarks = 0;
 
 for (
-  let arrayPosition = 0;
-  arrayPosition < studentexamMarks.length;
-  arrayPosition++
+  let studentExamMarkPosition = 0;
+  studentExamMarkPosition < studentexamMarks.length;
+  studentExamMarkPosition++
 ) {
-  averageStudentMarks += studentexamMarks[arrayPosition];
+  averageStudentExamMarks += studentexamMarks[studentExamMarkPosition];
 }
 
 console.log(
   `La nota media de los ${studentexamMarks.length} alumnos ha sido: un ${
-    averageStudentMarks / studentexamMarks.length
+    averageStudentExamMarks / studentexamMarks.length
   }`
 );
 
