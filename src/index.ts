@@ -1,8 +1,8 @@
 // Ejercicio 1
 
-let years: number[] = [];
+const years: number[] = [];
 let initialYear = 2000;
-let endYear = 2024;
+const endYear = 2024;
 
 for (let currentYear = initialYear; currentYear <= endYear; currentYear++) {
   years.push(currentYear);
@@ -55,14 +55,14 @@ const words = [
 ];
 
 words.reverse();
-let joinedArray = words.join(" ");
+const joinedArray = words.join(" ");
 console.log(joinedArray);
 
 // Ejercicio 3:
 
 let studentexamMarks: number[] = [];
 studentexamMarks = [8, 6, 9, 4, 7];
-let sortedExamMarks = studentexamMarks.sort();
+const sortedExamMarks = studentexamMarks.sort();
 
 for (const examMark of studentexamMarks) {
   if (examMark >= 5) {
