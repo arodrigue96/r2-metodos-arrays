@@ -64,9 +64,9 @@ let studentExamMarks: number[] = [];
 studentExamMarks = [8, 6, 9, 4, 7];
 const sortedExamMarks = studentExamMarks.sort();
 
-for (const examMark of studentExamMarks) {
-  if (examMark >= 5) {
-    console.log(`Este alumno ha aprobado el examen con un: ${examMark}`);
+for (const studentExamMark of studentExamMarks) {
+  if (studentExamMark >= 5) {
+    console.log(`Este alumno ha aprobado el examen con un: ${studentExamMark}`);
   }
 }
 
