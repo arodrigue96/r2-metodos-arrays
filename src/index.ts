@@ -55,16 +55,16 @@ const words = [
 ];
 
 words.reverse();
-const joinedArray = words.join(" ");
-console.log(joinedArray);
+const joinedSentence = words.join(" ");
+console.log(joinedSentence);
 
 // Ejercicio 3:
 
-let studentexamMarks: number[] = [];
-studentexamMarks = [8, 6, 9, 4, 7];
-const sortedExamMarks = studentexamMarks.sort();
+let studentExamMarks: number[] = [];
+studentExamMarks = [8, 6, 9, 4, 7];
+const sortedExamMarks = studentExamMarks.sort();
 
-for (const examMark of studentexamMarks) {
+for (const examMark of studentExamMarks) {
   if (examMark >= 5) {
     console.log(`Este alumno ha aprobado el examen con un: ${examMark}`);
   }
@@ -74,15 +74,15 @@ let averageStudentExamMarks = 0;
 
 for (
   let studentExamMarkPosition = 0;
-  studentExamMarkPosition < studentexamMarks.length;
+  studentExamMarkPosition < studentExamMarks.length;
   studentExamMarkPosition++
 ) {
-  averageStudentExamMarks += studentexamMarks[studentExamMarkPosition];
+  averageStudentExamMarks += studentExamMarks[studentExamMarkPosition];
 }
 
 console.log(
-  `La nota media de los ${studentexamMarks.length} alumnos ha sido: un ${
-    averageStudentExamMarks / studentexamMarks.length
+  `La nota media de los ${studentExamMarks.length} alumnos ha sido: un ${
+    averageStudentExamMarks / studentExamMarks.length
   }`
 );
 
